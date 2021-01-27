@@ -22,7 +22,7 @@ const initializeGame= ()=>{
 
 // this function matches user input and updates score if input is correct
 const matchWords=()=>{
-    if(userInput.value === wordToType.textContent){
+    if(userInput.value.toLowerCase() === wordToType.textContent){
         updateWordToType()
         userInput.value = "";
         score = score +10;
@@ -62,5 +62,3 @@ const waitTimeCountDown = ()=>{
 
 setInterval(waitTimeCountDown, 1000);
 setTimeout(initializeGame, 5200);
-
-
