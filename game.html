@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>typeFast</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/game.css">
+</head>
+<body>
+   <main>
+       <section class="score-board">
+        <svg class="top-blob" width="340" height="135" viewBox="0 0 340 135" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M340 1.42556e-05C340 17.7285 335.603 35.2833 327.06 51.6623C318.516 68.0412 305.994 82.9235 290.208 95.4594C274.422 107.995 255.682 117.939 235.056 124.724C214.431 131.508 192.325 135 170 135C147.675 135 125.569 131.508 104.944 124.724C84.3185 117.939 65.5778 107.995 49.7918 95.4594C34.0059 82.9235 21.4838 68.0412 12.9405 51.6623C4.39718 35.2833 -1.95169e-06 17.7285 0 0L170 1.42556e-05H340Z" fill="#ED3853"/>
+        </svg> 
+        <div class="score-container">
+            <svg class="star" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.2056 2.42973C8.29936 -0.272815 12.1257 -0.272816 13.2195 2.42972L13.3236 2.68703C13.7565 3.75661 14.795 4.45663 15.9488 4.45663H17.0255C19.6192 4.45663 20.5462 7.88571 18.3058 9.19255V9.19255C17.2148 9.82891 16.7568 11.17 17.2306 12.3407L17.2787 12.4594C18.2406 14.8362 15.6463 17.0827 13.4314 15.7908L11.877 14.8841C10.8484 14.2842 9.57664 14.2842 8.54811 14.8841L6.99366 15.7908C4.77881 17.0827 2.18447 14.8362 3.14641 12.4594L3.19444 12.3407C3.66827 11.17 3.21028 9.82891 2.1193 9.19255V9.19255C-0.121156 7.88571 0.805835 4.45663 3.39957 4.45663H4.47625C5.6301 4.45663 6.66858 3.75661 7.10146 2.68703L7.2056 2.42973Z" fill="#FFDC24"/>
+            </svg>
+               <h1 class="score" id="score"> 00</h1> 
+        </div>
+       </section>
+
+
+    <section class="game-area">
+        <p class="timer" id="timer">00s</p>
+        <p class="word-to-type" id="word-to-type"></p>
+        <div class="user-input">
+            <input type="text" name="user-input" id="user-input" placeholder="Type!">
+        </div>
+    </section>
+
+    <section class="wait-time">
+        <P id="wait-time"></P>
+    </section>
+
+    <svg class="bottom-blob" width="71" height="107" viewBox="0 0 71 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 20.6987C0 -9.7606 72.7481 -3.88247 59.3335 20.6987C45.919 45.2799 91.322 107 59.3335 107C27.345 107 0 107 0 107C0 107 0 51.158 0 20.6987Z" fill="url(#paint0_linear)"/>
+        <defs>
+        <linearGradient id="paint0_linear" x1="-3.3232e-07" y1="20.6987" x2="59.7993" y2="102.504" gradientUnits="userSpaceOnUse">
+        <stop offset="0.244792" stop-color="#FF304F"/>
+        <stop offset="0.890625" stop-color="#FF6D24"/>
+        </linearGradient>
+        </defs>
+    </svg> 
+   </main>
+   <script src="scripts/main.js"></script>
+</body>
+</html>
+
+
